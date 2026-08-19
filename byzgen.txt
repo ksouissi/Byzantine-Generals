@@ -1,0 +1,44 @@
+Imagine a multitude of nodes and let one of them, x, ask a question to some other, say y.
+
+Such an x won't be satisfied with y's answer and will ask all the other nodes, call them z, what is it that y told them in response to x's question. Far from being done with it, taking *a majority of the reports*, x will have to, for the same reason, ask, for any such z, all the remaining nodes what is it that z told them that y said it that it said to x.
+
+How long such a sequence need be? If it were to chain n trustful nodes (t0, t1, ... tn-1) where t0=y, then if there still remained, in addition to x, taken as trustful, n other trustful nodes, and at most n erratic ones, then x would be agreeing with any of the n other remaining trustful nodes concerning tn-1's witness, this because tn-1 being trustful, it will send the same response to all the askers. 
+
+Hence, when x will ask these n trustful nodes "what is it that tn-1 said that ... t1 said that t0 said?", it will receive the same message that tn-1 sent it, and therefore whatever the no more than n erratic nodes told x in regard to t0, ... tn-1, it will have *a majority* of n+1 equal responses vs. <= n diverging ones. Such a (t0, ... tn-1) is a worst case sequence, that is the maximum number of trustful nodes is chained for n erratic ones, beyond which disagreement among the trustful nodes is not excluded.
+
+Suppose tn-1 as erratic, shall the unchained n+2 trustful nodes agree on (t0, ... tn-1)? Not necessarily: tn-1, being erratic, isn't bound to send the same datum to all nodes, let it report i to x, j != i to another trustful w and not-all-equal values to the remaining n trustful nodes. Now, x and w will ask all the remaining nodes what tn-1 told that ... t0 said. The erratic nodes could answer i to x and j to w. For x, this causes its assigning i to t0, ... tn-1 because, by construction, it receives *a majority* of i values. On the other hand, w will conclude j for the same reason.
+
+However, although the trustful nodes may differ on (t0, ... tn-1) with erratic tn-1, they will agree on (t0, ... tn-2) (trustful tn-2), because for all trustful tn-1, the same value is assigned to (t0, ... tn-2, tn-1) by all free trustful nodes as that returned by tn-2. That is, *a majority* of n+2 identical values (counting the direct answer of tn-2) on a total of 2n+2.
+
+Suppose that for all j, 0 <= i < j <= n-1 and trustful tj, all trustful nodes agree on (t0, ... tj). If ti is trustful, all trustful nodes will moreover agree on the *same* value for all (t0, ... ti, ti+1) where ti+1 is trustful, which is the value sent by ti to any node. Let a = |tk, k <= i & tk trustful| and b = |tk, k <= i & tk erratic|. There are n-b free erratic nodes, 2*n+1-a free trustful nodes. As can be seen immediately, n-b < 2*n+1-a*.
+It follows that all trustful nodes will agree on (t0, ... ti) and by induction, so will they on a trustful t0.
+
+Thus, the problem is solved if there are strictly more than twice the number of trustful nodes as there are erratic nodes.
+For n erratic nodes, a longest chain shorter than n does not enforce agreement on erratic nodes because of the remaining free erratic nodes: all erratic nodes must be chainable together for the trustful nodes to agree on erratic nodes. A chain of length n with less than 2*n+1 trustful nodes for n erratic nodes may leave trustful <= erratic nodes free, not precluding disagreement. Thus for the problem to be solved, there must be more than twice as many trustful nodes as there are erratic nodes.
+
+* |free trustful node| = 2*n+1-a = n+1+(n-a), |free erratic nodes| = n-b
+a+b = i+1 < n => n-a > 0 => n+1+(n-a) > n >= n-b
+
+Simulation:
+
+x0, ... x3n: 3n+1 nodes
+u[i, j] = what node xj says to xi, if xj trustful then == j
+K a fixed value
+
+val(k, i(j-1), ... i0) {
+	if (j-1 == 0 || erratic(xi(j-1)))
+		return u[k, i(j-1)]
+	(* !erratic(xi(j-1)) && (xi(j-2), ... xi0) != () *)
+	return val(i(j-1), i(j-2), ... i0)	(* say what xi(j-1) says that xi(j-2) says that  ... xi0 says *)
+}
+
+decide(k, i(j-1), ... i0, m) {	(* xk trustful && j > 0 *)
+	v[k] = val(k, i(j-1), ... i0)
+	if (m == 0)
+		return v[k]
+	foreach (p in { q | 0 <= q < 3n+1 && q not in { k, i(j-1), ... i0 } })
+		v[p] = decide(k, p, i(j-1), ... i0, m-1)
+	return value in v that occurs most often, if none then K
+}
+
+decide(i, j, n) == what xi decides that xj says
