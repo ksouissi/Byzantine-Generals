@@ -1,0 +1,103 @@
+what follows can be seen as a concretization of the Byzantine Generals theorem (bearing witness to the instability of an exactly-2-to-1 majority.) Motivation: K. Gödel did it. Try and do it.
+
+The United States Constitution is provably open to a dictatorship.
+
+Reflections on Kurt Gödel pp. 115-116, H. Wang, 1987: In connection with the interview for his US citizenship, he once told me that for this occasion he had studied how the Indians had come to America. Einstein and O. Morgenstern were his witnesses, and Morgenstern has told different people about aspects of the event. The following account is given by H. Zemanek and E. Kohler (see Zemanek’s report, Elektronische Rechenan-lagen, vol. 5, 1978, pp. 209-211). Even though the routine examination G was to take was an easy matter, G prepared seriously for it and studied the US Constitution carefully. On the day before the interview G told Mor-genstern that he had discovered a logical-legal possibility of transforming the United States into a dictatorship. Morgenstern saw that the hypothet-ical possibility and its likely remedy involved a complex chain of reasoning and was clearly not suitable for consideration at the interview. He urged G to keep quiet about his discovery. The next morning Morgenstern drove Einstein and G from Princeton to Trenton. Einstein was informed; on the way he told one tale after another, to divert G from his Constitution-theoretical explanations, apparently with success. At the office in Trenton, the official in charge was Judge Philip Forman, who had inducted Einstein in 1940 and struck up a friendship with him. He greeted them warmly and invited all three to attend the (normally private) examination of G. The judge began, ‘You have German citizenship up to now.’ G inter-rupted him, ‘Excuse me sir, Austrian.’ ‘Anyhow, the wicked dictator! but fortunately that is not possible in America.’ ‘On the contrary,’ G inter-jected, ‘I know how that can happen.’ All three joined forces to restrain G so as to turn to the routine examination.
+
+The president can postpone indefinitely anything resulting from the concurrence of both houses.
+
+Proof:
+Let
+P: president
+C: congress (both houses)
+X: order, resolution or vote
+Vi: vote
+
+0. C passes X: C produces V0
+1. C sends V0 to P
+2. P returns V0 to C
+3. C reconsiders V0: C produces V1, V0 shall "become a law" i.e., shall be of effect because V1 exists
+4. C sends V1 to P
+5. P returns V1 to C
+6. C reconsiders V1: C produces V2, V1 shall become a law, etc.
+
+0.
+X is an order, resolution or vote to which the concurrence of both houses is necessary. This concurrence is a vote, V0:
+
+Every Order, Resolution, or *Vote to which the Concurrence of the Senate and House of Representatives may be necessary (except on a question of Adjournment*) shall be presented to the President of the United States*; (U.S. const. I.7, §2)
+
+1.
+X’s vote, i.e., V0, should be sent to president, because if X is sent then V0 of effect:
+
+and before the Same shall take Effect, shall be approved by him, or being disapproved by him, shall be repassed by two thirds of the Senate and House of Representatives, according to the Rules and Limitations prescribed in the Case of a Bill. (I.7, §3)
+
+2.
+If he [the President of the United States] approve he shall sign it, but if not he shall return it, with his Objections to that House in which it shall have originated
+P doesn’t approve, he returns V0 to that house in which V0 has originated.
+
+3.
+who shall enter the Objections at large on their Journal, and proceed to reconsider it. If after such Reconsideration two thirds of that House shall agree to pass the Bill, it shall be sent, together with the Objections, to the other House, by which it shall likewise be reconsidered
+
+Such reconsiderations result in a vote V1, the mere existence of which causes V0’s becoming of effect. But to become isn’t to be: if V1 exists then V0 becomes of effect, if V0 of effect then V1 of effect and if V1 of effect then V1 sent to P because V1 is not excepted from:
+
+Every Order, Resolution, or *Vote to which the Concurrence of the Senate and House of Representatives may be necessary* (except on a question of Adjournment) shall be presented to the President of the United States; (U.S. const. I.7, §2)
+
+4.
+Which is what happens in 5, Congress must send the reconsideration vote V1 to P.
+
+5.
+P returns V1 because he can for, after all, V1 is but a vote for which both houses of C are responsible.
+
+6.
+C must reconsider V1 for otherwise neither V1 nor V0 will take effect, in contradiction with 4. C thus makes a V2, the existence of which causes V1 to become of effect, which requires V2’s effect, which won’t happen before its having been sent to P. Etc.
+X won’t even be presented to P if P disagrees on the Vs. But even if X were presented to P, P can still return X & any further V that C may present.
+QED.
+
+* Interestingly enough, what actually happens is adjournment, but not according to the meaning of the term as it is used in the constitution.
+
+No Amending of this Constitution will be done without the President’s allowing it. For the proposal of Amendments by the Congress supposes that two thirds of both Houses shall deem it necessary. But both Houses need also agree before they shall call a Convention for proposing Amendments, on the Application of the Legislatures of two thirds of the several States (V). These are respectively, a Resolution and an Order to which the Concurrence of the Senate and House of Representatives may be necessary. What this implies is that the amending process won’t start while disapproved by the President. But neither ends if forbidden by the same. For the very mode of Ratification, since determined by Congress also needs the President’s approval to take Effect (all of this because of I.7, §3).
+
+No Judgment in Cases of Impeachment will be reached without the prior Consent of the President.
+For such Judgments require Indictment, Trial & Conviction. Now, on the one hand, the Indictment in such Cases is an Order which only the House of Representatives can issue:
+
+The House of Representatives [...] shall have the sole Power of Impeachment (I.2, §5).
+
+On the other hand:
+The Senate shall have the sole Power to try all Impeachments and the Conviction needs the Concurrence of two thirds of the Members present (I.3, §6)
+
+Which is a Resolution or Vote. So, because the Concurrence of both Houses is necessary, the Verdict is not going to take Effect before its (or a related Vote’s) having been signed or left unreturned in excess of 10 days (Sundays excepted) by the President (cf. I.7, §3).
+
+Now Congress acted anti-constitutionally by making Amendment I, breaking the following fragment of the same (by then in the Constitution):
+
+Congress shall make no law [...] abridging the freedom of speech
+
+Congress is to be held accountable for that. For Congress made a Law abridging its own freedom of speech (as a legislator). This act is forbidden by the (then amended) Constitution. Moreover, Amendment I becomes a Law because Congress inserts it in the Constitution and this insertion (towards its end) becomes anti-constitutional because of (the just inserted) Amendment I: Amendment I is an ex post facto law, which is against the constitution.
+Amendment XXV, Section 4 is no remedy. For President can Commission the Vice President with some Military Trust (because of II.3 and the Vice President’s being an Officer, see e.g., Amendment XII’s "But no person constitutionally ineligible to the office of President shall be eligible to that of Vice-President of the United States" where "that" refers to "office"). President as Commander in Chief can then order the Vice President to resign from the Office of Vice President. Should he refuse, being subjected to Martial Discipline, he incurs at least his being arrested; but he could also be Impeached, Convicted and removed from Office, because Constitution’s II.4 seems to apply to such a disobedience. Now by Amendment XXV’s Section 2, President should nominate a Vice President: he can nominate his own self, and keep doing so upon each non-confirmation by Congress. This results in the Office of Vice President remaining empty as long as President finds fit, unless Congress agrees with the President’s nomination. In this way, President can ensure his not being ousted by Vice President (except by his own self). But even if Vice President were to become President, and Vice President’s Office should, as a result of his becoming President, be considered vacated, he, as President, is expected to nominate a Vice President (XXV.2): he can proceed as explained above (thus leaving that Office empty if not filled with his self); then, the new Dictator can no longer be removed following XXV.4 (except, again, by his own self).
+
+One could object that reconsidered things need not remain without effect while the reconsideration votes themselves are of no effect i.e., it could be suggested that the word "before" means only logical precedence i.e., that x is before y should only mean that a necessary condition for y is x, where y may very well occur chronologically before x. But this, in fact, makes things worse. For if "before", as in "before it becomes a Law", weren’t to require the chronological precedence of the President’s approval (i.e., signature or non-return) then it would be perfectly sound to make of a Bill a Law chronologically before its passing both Houses. For the passage of a Bill is arguably motivated by a prior agreement of some majority of both Houses concerning that Bill: it hardly would have been proposed, if it weren’t probable that it would actually become a Law. Moreover, even if returned by the President, they could already be prejudiced against any objection of his in this process and be determined from the beginning to re-pass the same, or any related Vote should it be returned. So what could be defended then is that, since it is likely from the beginning that the Bill shall become a Law: it suffices for Congress not to by their Adjournment prevent its (or that of a related Vote) Return, because otherwise it shall not be a Law. That Bill shall then be made Law, with the Conditions of its being made so (e.g., passed by both Houses) to be fulfilled at some later time. The U.S. President could, if "before" weren’t chronological, also very well make out of some Recommendation a Law before its Consideration by Congress. For example one in which a part would be: "All non-Yeas, including abstentions, shall be added to Yeas, in the Vote for passing this Recommendation". For that that Recommendation was never considered by the Congress under the Constitution can’t be determined before the cessation of this Constitution. So, there is no constitutional objection against that Recommendation’s being a Law as soon as President has made it. Now, if there indeed shall be Consideration, the said Recommendation will pass the Senate and the House of Representatives because of that quoted part and its being a Law. It then suffices for the President of the United States not to return it upon being presented with it, within the required period. This would not happen if a prior (in time) Consideration by Congress was necessary, as would be the case if "before" were as usual, because then, Congress could discard such Recommendations by (say) not considering them. Therefore the chronological meaning of "before" is to be maintained.
+
+Notice that USC IV.4 may be in contradiction with a dictatorial government: USC is inconsistent and classical logic takes care of USC’s requiring what it forbids. One doesn’t have to arrange for the US to be attacked (e.g., by the selfsame US) in order to establish a practical dictatorship: the USA are de constitutio a dictatorship (and inconsistent at that).
+
+It is of interest that Thomas Jefferson having held the doctrine of Permanent Revolution, the USC turns out to be inconsistent or self-destructive. That failed suicide is prohibited by the USC is a striking confirmation thereof:
+
+Proof
+[...] nor shall be compelled in any criminal case to be a witness against himself [...] (Amendment V)
+
+That X fails suicide means that X failed to kill Y where X = Y. According to Amendment VI:
+In all criminal prosecutions, the accused shall enjoy [...] to have compulsory process for obtaining witnesses in his favor [...]
+
+Y is to be compelled to witness in favor of X for Y is the only witness of X's attempt on Y's life. Because we have to do with a case of X vs. Y, to witness in favor of X is to witness against Y (= X): X is compelled to witness against himself which contradicts Amendment V.
+QED.
+
+In passing, Congress, by resisting the President’s veto, actually defeats itself. For then Congress must not fail to reconsider any vetoed vote in the unbounded sequence, for if it were to leave a returned vote not repassed, i.e., if C weren’t to produce a further joint reconsideration vote, then none of the preceding votes would be of effect which is a contradiction because the mere existence of any Vi, where i > 0, ensures that Vi-1 would become (nota bene that the word in the USC is "become", not "be") of effect. Vi-1 shall actually reach effect only after Vi’s effect, for the object of Vi is Vi-1’s being of effect.
+
+In view of:
+Before he enter on the Execution of his Office, he shall take the following Oath or Affirmation: "I do solemnly swear (or affirm) that I will faithfully execute the Office of President of the United States, and will to the best of my Ability, preserve, protect and defend the Constitution of the United States." (II.1.8)
+
+And because C, by its failing to reconsider a reconsidered but vetoed vote, raised a contradiction or "harmed the USC," it is therefore a signal duty, for the President, to punish C.
+
+It can perhaps be thought that a reconsideration isn’t really a joint vote. This is of course false and an easy practical disproof consists in checking the Journal of both Houses.
+A theoretical proof of the above is likewise easy:
+[...] But in all such Cases the Votes of both Houses shall be determined by yeas and Nays, and the Names of the Persons voting for and against the Bill shall be entered on the Journal of each House respectively. (I.7.2)
+
+Each House shall keep a Journal of its Proceedings, and from time to time publish the same, excepting such Parts as may in their Judgment require Secrecy; and the Yeas and Nays of the Members of either House on any question shall, at the Desire of one fifth of those Present, be entered on the Journal. (I.5.3)
