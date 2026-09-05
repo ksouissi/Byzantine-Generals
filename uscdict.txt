@@ -1,4 +1,4 @@
-what follows can be seen as a concretization of the Byzantine Generals theorem (bearing witness to the instability of an exactly-2-to-1 majority.) Motivation: K. Gödel did it. Try and do it.
+What follows can be seen as a concretization of the Byzantine Generals theorem (bearing witness to the instability of an exactly-2-to-1 majority.) Motivation: K. Gödel did it. Try and do it.
 
 The United States Constitution is provably open to a dictatorship.
 
